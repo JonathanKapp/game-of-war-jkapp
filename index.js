@@ -22,7 +22,7 @@ function handleClick() {
 newDeckBtn.addEventListener("click", handleClick)
 
 drawCardBtn.addEventListener("click", () => {
-    fetch(https://www.google.com/url?sa=E&source=gmail&q=https://deckofcardsapi.com/api/deck/${deckId}/draw/?count=2)
+    fetch(`https://deckofcardsapi.com/api/deck/${deckId}/draw/?count=2`)
         .then(res => res.json())
         .then(data => {
             remainingText.textContent = `Remaining cards: ${data.remaining}`
