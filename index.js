@@ -10,7 +10,7 @@ const computerScoreEl = document.getElementById("computer-score")
 const myScoreEl = document.getElementById("my-score")
 
 function handleClick() {
-    fetch("https://apis.scrimba.com/deckofcards/api/deck/new/shuffle/")
+    fetch("https://deckofcardsapi.com/api/deck/new/shuffle/")
         .then(res => res.json())
         .then(data => {
             remainingText.textContent = `Remaining cards: ${data.remaining}`
@@ -22,7 +22,7 @@ function handleClick() {
 newDeckBtn.addEventListener("click", handleClick)
 
 drawCardBtn.addEventListener("click", () => {
-    fetch(`https://apis.scrimba.com/deckofcards/api/deck/${deckId}/draw/?count=2`)
+    fetch(https://www.google.com/url?sa=E&source=gmail&q=https://deckofcardsapi.com/api/deck/${deckId}/draw/?count=2)
         .then(res => res.json())
         .then(data => {
             remainingText.textContent = `Remaining cards: ${data.remaining}`
@@ -41,12 +41,6 @@ drawCardBtn.addEventListener("click", () => {
         })
 })
 
-/**
- * Challenge:
- * 
- * Display the final winner in the header at the top by
- * replacing the text of the h2.
- */
 
 function determineCardWinner(card1, card2) {
     const valueOptions = ["2", "3", "4", "5", "6", "7", "8", "9", 
