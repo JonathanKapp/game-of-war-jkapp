@@ -1,0 +1,14 @@
+{
+  "name": "Scrim-s0br30loto",
+  "description": "https://scrimba.com/s0br30loto/head",
+  "scripts": {
+    "start": "vite",
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "vite": "latest"
+  },
+  "devDependencies": {}
+}
